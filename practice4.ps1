@@ -12,3 +12,22 @@ else
   {
   Write-Host "Numbrid on võrdsed"
   }
+
+Write-Host "Vali riik: " -ForegroundColor Yellow
+Write-Host "1: India" -ForegroundColor Cyan
+Write-Host "2: Austraalia" -ForegroundColor Cyan
+Write-Host "3: Hiina" -ForegroundColor Cyan
+$valik = Read-Host "Palun vali riik: "
+if ($valik -eq 1)
+  {
+  Write-Host "India pealinn on New-Delhi"
+  }
+elseif ($valik -eq 2){
+Write-Host "Austraalia pealinn on Canberra"
+}
+elseif ($valik -eq 3){
+Write-Host "Hiina pealinn on Peking"
+}
+else{
+Write-Host "Vali number 1-3"
+}
